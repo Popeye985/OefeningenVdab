@@ -9,7 +9,7 @@ public class stringFormatteren {
             System.out.println("Geef een naam op");
             String naam = invoer.nextLine();
             String resultaat = String.format ("Naam: %20s ", naam );
-            
+
         }
 
 
