@@ -13,16 +13,13 @@ public class palindroom2 {
             System.out.printf("%s is geen palindroom", tekst);
         }
     }
-    private static String isPalindroom (tekst){
-        for (int i = woord.length() - 1; i >= 0; i--) {
-            anderWoord = anderWoord + woord.charAt(i);
+    private static boolean isPalindroom (String tekst){
+        String omgekeerd = "";
+        for (int i = tekst.length() - 1; i >= 0; i++) {
+            omgekeerd = tekst.charAt(i) + omgekeerd;
 
         }
-        if (woord.equalsIgnoreCase(anderWoord))
-            System.out.println("Dit is een palindroom");
-        else
-            System.out.println("Dit is geen palindroom");
-
+        return tekst.equals(omgekeerd);
 
     }
 }
